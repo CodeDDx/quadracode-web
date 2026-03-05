@@ -45,9 +45,9 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Quadra Code"
-            width={40}
-            height={40}
-            className="invert brightness-200 transition-transform group-hover:scale-110"
+            width={36}
+            height={36}
+            className="invert transition-transform group-hover:scale-110"
           />
           <span className="text-lg font-bold tracking-wider hidden sm:block">
             QUADRA <span className="gradient-text">CODE</span>

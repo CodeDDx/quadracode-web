@@ -8,9 +8,9 @@ export default function Founder() {
   const { t } = useLanguage();
 
   return (
-    <section id="founder" className="relative py-32 overflow-hidden">
+    <section id="founder" className="relative py-32">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#7c5cfc]/20 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#7c5cfc]/3 blur-[150px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#7c5cfc]/[0.04] blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
@@ -18,7 +18,7 @@ export default function Founder() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-4"
+          className="text-center mb-16"
         >
           <span className="text-sm font-medium tracking-widest uppercase text-[#7c5cfc]">
             {t.founder.label}
@@ -34,29 +34,23 @@ export default function Founder() {
             transition={{ duration: 0.8 }}
             className="relative flex-shrink-0"
           >
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden">
-              {/* Gradient border effect */}
-              <div className="absolute inset-0 rounded-3xl animated-border z-10" />
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden border border-white/10">
               <Image
                 src="/images/marek.jpg"
                 alt={t.founder.name}
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 288px, 384px"
+                priority
               />
-              {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b]/60 via-transparent to-transparent" />
             </div>
 
-            {/* Floating badge */}
-            <motion.div
-              animate={{ y: [-5, 5, -5] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-4 -right-4 bg-[#16161a] border border-white/10 rounded-2xl px-5 py-3 backdrop-blur-xl"
-            >
+            {/* Badge */}
+            <div className="absolute -bottom-4 -right-4 bg-[#16161a] border border-white/10 rounded-2xl px-5 py-3">
               <p className="text-xs text-[#8a8a9a]">QUADRA CODE</p>
               <p className="text-sm font-bold gradient-text">{t.founder.role}</p>
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Content */}
@@ -74,7 +68,6 @@ export default function Founder() {
               {t.founder.role}
             </p>
 
-            {/* Quote */}
             <div className="relative">
               <svg
                 className="absolute -top-4 -left-4 w-10 h-10 text-[#7c5cfc]/20"
@@ -88,7 +81,7 @@ export default function Founder() {
               </p>
             </div>
 
-            {/* Social links */}
+            {/* Social */}
             <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start">
               <a
                 href="#"

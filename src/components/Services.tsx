@@ -55,9 +55,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="relative py-32 overflow-hidden">
+    <section id="services" className="relative py-32">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#4d9fff]/20 to-transparent" />
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-[#7c5cfc]/3 blur-[150px]" />
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-[#7c5cfc]/[0.04] blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div

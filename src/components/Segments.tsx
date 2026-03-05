@@ -40,7 +40,7 @@ export default function Segments() {
   ];
 
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-32">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4aa]/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
