@@ -86,6 +86,16 @@ export default function About() {
             >
               {t.about.description}
             </motion.p>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeUp}
+              custom={3}
+              className="mt-4 text-lg text-[#8a8a9a] leading-relaxed"
+            >
+              {t.about.description2}
+            </motion.p>
           </div>
 
           <div className="grid grid-cols-2 gap-4">

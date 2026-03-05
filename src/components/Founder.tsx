@@ -77,8 +77,14 @@ export default function Founder() {
               {t.founder.role}
             </p>
 
-            <p className="text-[#8a8a9a] leading-relaxed text-lg mb-8">
+            <p className="text-[#8a8a9a] leading-relaxed text-lg mb-4">
               {t.founder.bio}
+            </p>
+            <p className="text-[#8a8a9a] leading-relaxed text-lg mb-4">
+              {t.founder.bio2}
+            </p>
+            <p className="text-white leading-relaxed text-lg font-medium italic mb-8">
+              {t.founder.bio3}
             </p>
 
             <div className="relative">
@@ -131,8 +137,14 @@ export default function Founder() {
                 </div>
                 <h3 className="text-2xl font-bold">{t.founder.whyDubaiTitle}</h3>
               </div>
-              <p className="text-[#8a8a9a] leading-relaxed text-lg">
+              <p className="text-[#8a8a9a] leading-relaxed text-lg mb-4">
                 {t.founder.whyDubai}
+              </p>
+              <p className="text-[#8a8a9a] leading-relaxed text-lg mb-4">
+                {t.founder.whyDubai2}
+              </p>
+              <p className="text-white leading-relaxed text-lg font-medium italic">
+                {t.founder.whyDubai3}
               </p>
             </div>
           </div>
