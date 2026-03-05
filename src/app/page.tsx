@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
+const StarField = dynamic(() => import("@/components/StarField"), { ssr: false });
 const Navbar = dynamic(() => import("@/components/Navbar"), { ssr: false });
 const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
 const About = dynamic(() => import("@/components/About"), { ssr: false });
@@ -15,7 +16,8 @@ const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 export default function Home() {
   return (
     <LanguageProvider>
-      <div className="noise">
+      <StarField />
+      <div className="relative z-10 noise">
         <Navbar />
         <Hero />
         <About />
